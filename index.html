@@ -1,14 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jhonathan Barrios - Portfolio</title>
-<link rel="stylesheet" href="assets/css/main.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio — Jhonathan Barrios</title>
+  <meta content="Portfolio showcasing personal and professional projects in data science, analytics, automation, and machine learning/deep learning." name="description">
+  <meta content="data science, machine learning, deep learning, analytics, automation, portfolio" name="keywords">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
-<h1>Jhonathan Barrios - Portfolio</h1>
-<p>This is a placeholder portfolio page. Replace this content with your real index.html code.</p>
-<script src="assets/js/main.js"></script>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="#hero" class="logo d-flex align-items-center">
+        <h1 class="sitename">Portfolio</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Open menu"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-img.jpg" alt="Hero" data-aos="fade-in">
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>Jhonathan Barrios</h2>
+        <p><span class="typed" data-typed-items="Senior Data Scientist, Data Analysis, Machine Learning, Topological Data Analysis"></span></p>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About Me</h4>
+              <p>I am a Senior Data Scientist with a background in Physics, Statistics, and Applied Mathematics. My expertise spans data analytics, machine learning, and innovative methodologies such as Topological Data Analysis (TDA) applied to complex problems.</p>
+              <p>I have experience in academic research and industry projects across healthcare, energy, and finance. My skills cover the full data lifecycle: ingestion, processing, modeling, deployment, and monitoring of ML/DL systems.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="about-info">
+              <h4>Contact</h4>
+              <p><strong>Name:</strong> Jhonathan Barrios</p>
+              <p><strong>Title:</strong> Senior Data Scientist</p>
+              <p><strong>Email:</strong> <a href="mailto:jhonathanbarrios21@gmail.com">jhonathanbarrios21@gmail.com</a></p>
+              <p><strong>Location:</strong> Lisbon, Portugal</p>
+              <p class="mt-3">
+                <a class="me-2" href="https://github.com/JhonathanBarrios21" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                <a class="me-2" href="https://www.linkedin.com/in/jhonathan-barrios-93589011b/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a class="me-2" href="https://scholar.google.com/citations?user=NTtK_nsAAAAJ&hl=en" aria-label="Google Scholar"><i class="bi bi-journal"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects Portfolio</h2>
+        <p>Data science solutions for research and industry: analytics, automation, and ML/DL.</p>
+      </div>
+      <div class="container">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-analysis">Data Analysis & Visualization</li>
+            <li data-filter=".filter-automation">Automation & Pipelines</li>
+            <li data-filter=".filter-ml">Machine Learning & Deep Learning</li>
+            <li data-filter=".filter-research">Research & Development</li>
+          </ul>
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Data Analysis & Visualization -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
+              <img src="assets/img/analysis-healthcare.jpg" class="img-fluid" alt="Healthcare dashboard">
+              <div class="portfolio-info">
+                <h4>Time Series Healthcare Dashboard</h4>
+                <p>Clinical metrics monitoring with interactive visualizations.</p>
+                <a href="assets/img/analysis-healthcare.jpg" title="Time Series Healthcare Dashboard" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-analysis">
+              <img src="assets/img/analysis-finance.jpg" class="img-fluid" alt="Stock market dashboard">
+              <div class="portfolio-info">
+                <h4>Interactive Stock Market Dashboard</h4>
+                <p>Real-time indicators and historical patterns (finance example).</p>
+                <a href="assets/img/analysis-finance.jpg" title="Interactive Stock Market Dashboard" data-gallery="portfolio-gallery-analysis" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- Automation & Pipelines -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+              <img src="assets/img/automation-etl.jpg" class="img-fluid" alt="Sensor ETL">
+              <div class="portfolio-info">
+                <h4>Sensor Data ETL Pipeline</h4>
+                <p>Batch/stream ingestion, cleaning, and loading for analytics.</p>
+                <a href="assets/img/automation-etl.jpg" title="Sensor Data ETL Pipeline" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-automation">
+              <img src="assets/img/automation-reports.jpg" class="img-fluid" alt="KPI bot">
+              <div class="portfolio-info">
+                <h4>Automated KPI Reporting Bot</h4>
+                <p>Automated email/Slack reports generated from SQL queries.</p>
+                <a href="assets/img/automation-reports.jpg" title="Automated KPI Reporting Bot" data-gallery="portfolio-gallery-automation" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- ML & DL -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <img src="assets/img/ml-fog-tda.jpg" class="img-fluid" alt="FoG TDA">
+              <div class="portfolio-info">
+                <h4>Freezing of Gait Classification (TDA)</h4>
+                <p>Topological descriptors + ML for FoG episode classification.</p>
+                <a href="assets/img/ml-fog-tda.jpg" title="Freezing of Gait Classification (TDA)" data-gallery="portfolio-gallery-ml" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml">
+              <img src="assets/img/ml-finance-forecast.jpg" class="img-fluid" alt="Financial forecasting">
+              <div class="portfolio-info">
+                <h4>Financial Forecasting Model</h4>
+                <p>LSTM/Boosting for stock time series forecasting.</p>
+                <a href="assets/img/ml-finance-forecast.jpg" title="Financial Forecasting Model" data-gallery="portfolio-gallery-ml" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <!-- Research & Development -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
+              <img src="assets/img/research-hopf-tda.jpg" class="img-fluid" alt="Hopf TDA">
+              <div class="portfolio-info">
+                <h4>Hopf Bifurcation Detection with TDA</h4>
+                <p>Methodology to detect bifurcations in time series.</p>
+                <a href="assets/img/research-hopf-tda.jpg" title="Hopf Bifurcation Detection with TDA" data-gallery="portfolio-gallery-research" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
+              <img src="assets/img/research-tda-hpo.jpg" class="img-fluid" alt="TDA hyperparameters">
+              <div class="portfolio-info">
+                <h4>Hyperparameter Selection in TDA</h4>
+                <p>Theoretical framework for n_bins, delay, and embedding_dim in Takens.</p>
+                <a href="assets/img/research-tda-hpo.jpg" title="Hyperparameter Selection in TDA" data-gallery="portfolio-gallery-research" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="#" title="View project" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2>Contact</h2>
+            <p>Email me at <a href="mailto:jhonathanbarrios21@gmail.com">jhonathanbarrios21@gmail.com</a> for collaborations or inquiries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jhonathan Barrios</strong> <span>— All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://twitter.com" aria-label="Twitter/X"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.linkedin.com/in/jhonathan-barrios-93589011b/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/JhonathanBarrios21" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader" aria-hidden="true"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
